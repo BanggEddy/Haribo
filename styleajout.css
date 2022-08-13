@@ -1,0 +1,88 @@
+.navbar{
+    border-radius: 10px;
+}
+
+.ajout{
+    display: inline-block;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+body{background-color: grey;}
+
+div.centre {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px; /* Cette valeur doit être la moitié négative de la valeur du width */
+    margin-top: -100px; /* Cette valeur doit être la moitié négative de la valeur du height */
+    background-color: blue;
+}
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;font-family: Oswald;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;font-family: Oswald;
+}
+
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: Oswald;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; font-family: Oswald;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row: {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#Sujet{height:200px}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
