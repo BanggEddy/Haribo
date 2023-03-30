@@ -59,6 +59,25 @@ INSERT INTO `produit` (`id`, `nom`, `prix`, `photo`) VALUES
 (14, 'shtroumpf', '0.48', 'shtroumpf.jpg'),
 (15, 'frites', '0.45', 'frites.jpg');
 COMMIT;
+--
+-- Structure de la table `admin`
+--
+
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE IF NOT EXISTS `admin` (
+  `id` int(11) NOT NULL,
+  `login` varchar(100) DEFAULT NULL,
+  `mdp` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `admin`
+--
+
+INSERT INTO `admin` (`id`, `login`, `mdp`) VALUES
+(1, 'root', '63a9f0ea7bb98050796b649e85481845');
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
